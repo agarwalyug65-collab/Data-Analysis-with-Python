@@ -1,0 +1,16 @@
+import pandas as pd
+
+data = {"Name": ["A", "B", "C"], "Age": [20, 21, 22]}
+df = pd.DataFrame(data)
+df.to_csv("data.csv", index=False)
+
+df = pd.read_csv("data.csv")
+print("Read:\n", df)
+
+df["Age"] = df["Age"] + 1
+df["City"] = ["Delhi", "Mumbai", "Pune"]
+print("\nUpdate:\n", df)
+
+df = df.drop("City", axis=1)  
+df = df.drop(0, axis=0)       
+print("\nDelete:\n", df)
