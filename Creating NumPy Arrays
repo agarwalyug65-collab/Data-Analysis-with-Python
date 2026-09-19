@@ -1,0 +1,7 @@
+a = np.array([1, 2, 3])
+b = np.zeros((2, 2))
+c = np.ones((2, 2))
+d = np.arange(0, 10, 2)
+e = np.empty((2, 2), dtype=int)
+
+print("Matrix A \n", a, "\n Matrix B \n", b, "\n Matrix C \n", c, "\n Matrix D \n", d, "\n Matrix E \n", e)
